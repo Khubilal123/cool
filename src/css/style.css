@@ -1,0 +1,319 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background:#7a0c0c; 
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(226, 90, 12, 0.2);
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.title h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #ffd6d6;
+}
+
+/* Navigation */
+nav {
+  margin-top: 0.8rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #ffecec;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffcccb;
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  padding: 1.5rem;
+  background: white;
+  margin: 1rem auto;
+  border-radius: 10px;
+  max-width: 650px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #7a0c0c;
+  margin-bottom: 1rem;
+}
+
+
+form input, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+form button {
+  background: #b62222;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #59fccb;
+}
+
+/* Item List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #fff3f3;
+  margin: 0.6rem 0;
+  padding: 1rem;
+  border-left: 5px solid #7a0c0c;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #7a0c0c;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Controls layout */
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.controls input[type="search"] {
+  flex: 1 1 auto;
+}
+
+.controls select {
+  flex: 0 0 140px;
+}
+
+/* Accessible focus styles */
+button:focus, input:focus, textarea:focus, select:focus {
+  outline: 3px solid #ffd6d6;
+  outline-offset: 2px;
+}
+
+/* Responsive behavior: tablets and up */
+@media (max-width: 768px) {
+  header {
+    padding: 0.8rem;
+  }
+
+  .branding {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    height: 90px;
+  }
+
+  .title h1 {
+    font-size: 1.4rem;
+  }
+
+  .title h2 {
+    font-size: 0.9rem;
+  }
+
+  nav {
+    margin-top: 0.6rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  section {
+    margin: 1rem 0.8rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .controls select {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  form input, form textarea, form button {
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsive behavior: mobile phones */
+@media (max-width: 480px) {
+  header {
+    padding: 0.6rem;
+  }
+
+  .branding {
+    gap: 0.3rem;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .title h1 {
+    font-size: 1.2rem;
+  }
+
+  .title h2 {
+    font-size: 0.8rem;
+  }
+
+  nav {
+    margin-top: 0.4rem;
+  }
+
+  nav a {
+    margin: 0.2rem 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  section {
+    margin: 0.6rem 0.5rem;
+    padding: 0.8rem;
+    border-radius: 6px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  form input, form textarea, form button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    margin: 0.4rem 0;
+  }
+
+  form textarea {
+    min-height: 60px;
+  }
+
+  .controls {
+    gap: 0.3rem;
+  }
+
+  .controls input[type="search"],
+  .controls select {
+    font-size: 0.9rem;
+  }
+
+  .item-actions {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .item-actions button {
+    flex: 1 1 calc(50% - 0.15rem);
+    padding: 0.3rem 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  ul li {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+  }
+
+  .item-meta {
+    font-size: 0.75rem;
+  }
+
+  .toast {
+    right: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Screen-reader only helper */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+
+/* Item meta and actions */
+.item-meta { font-size: 0.85rem; color: #6b1b1b; margin-bottom: 0.4rem; }
+.item-actions { margin-top: 0.6rem; display: flex; gap: 0.5rem; }
+.item-actions button { padding: 0.4rem 0.6rem; font-size: 0.9rem; }
+
+/* Image preview */
+.image-preview img { max-width: 100%; height: auto; border-radius: 6px; margin-top: 0.5rem; }
+
+/* Small visible toast for sighted users */
+.toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background: #333;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  opacity: 0.95;
+  z-index: 9999;
+}
