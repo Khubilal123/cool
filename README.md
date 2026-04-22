@@ -46,6 +46,3 @@ The app's main page is `index.html` at the project root. Styles are in `src/css/
 - To submit a lost item, fill out the form on the homepage and provide as much detail as possible.
 - To view found items, navigate to the "Found Items" section.
 - Use the search bar to quickly locate specific items.
-
-## Contributing
-Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
